@@ -7,26 +7,34 @@
     <link rel="stylesheet" href="styles.css">
     <script src = script.js defer></script>
     <title>Etch-a-Sketch</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@1,700&family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,300&display=swap" rel="stylesheet">
+    
 </head>
 <body>
+    <header><h1>Etch-a-sketch</h1></header>
     <div class="wrapper">
     <div class = "color-buttons">
-        <button class="red" value = ff001f></button>
-        <button class="blue" value =  001bff></button>
-        <button class="yellow" value =  ffd800></button>
-        <button class="green" value =  32ff00></button>
-        <button class="black" value =  000000></button>
+        <button class="red" value =ff001f></button>
+        <button class="blue" value =001bff></button>
+        <button class="yellow" value =ffd800></button>
+        <button class="green" value =32ff00></button>
+        <button class="black" value =000000></button>
     </div>
         <div class="container-wrapper">
             <div class = container></div>
     </div>
         <div class="all-buttons">
-            <button class="grid">Grid</button>
-            <button class="prompt-button">Size</button>
-            <button class="rainbow">Rainbow Mode</button>
-            <button class="clear">Clear</button>
+            <button class="grid" id = right-button>Grid</button>
+            <button class="prompt-button" id = right-button>Size</button>
+            <button class="rainbow" id = right-button>Rainbow Mode</button>
+            <button class="grayscale" id = right-button>Grayscale</button>
+            <button class="clear" id = right-button>Clear</button>
         </div>
     </div>
-    
+    <div class="light-mode-wrapper">
+        <button class="light-mode">Light Mode</button>
+    </div>
 </body>
 </html>
